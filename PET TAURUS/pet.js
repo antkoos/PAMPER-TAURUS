@@ -1,7 +1,7 @@
 function startGame() {
     document.body.innerHTML =
         '<div onclick="taurusClick()">\
-<img id="taurus" src="Images/taurus_stage1.png">\
+<img id="taurus" style = "width: 400px; height: auto;" src="Images/taurus_stage1.png">\
 	</div>\
     <div>\
 <button onclick="grabBottle()">Feed!</button>\
