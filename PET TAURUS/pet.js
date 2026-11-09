@@ -1,7 +1,7 @@
 function startGame() {
     document.body.innerHTML =
         '<div onclick="taurusClick()">\
-<img id="taurus" src="taurus_stage1.png">\
+<img id="taurus" src="Images/taurus_stage1.png">\
 	</div>\
     <div>\
 <button onclick="grabBottle()">Feed!</button>\
@@ -27,15 +27,15 @@ document.getElementById('timespet').innerHTML = timesPet;
 
 function grabBottle() {
     hand = "bottle";
-    document.body.style.cursor = "url('bottle.png'), grab";
+    document.body.style.cursor = "url('Images/bottle.png'), grab";
 }
 
 function bottleFeed() {
     taurusCurrentAction = "feeding";
     hand = "none";
     document.body.style.cursor = 'default';
-    document.getElementById('taurus').src = 'taurus_stage1_feeding.png';
-    setTimeout(() => { document.getElementById('taurus').src = 'taurus_stage1.png'; taurusCurrentAction = null; }, 3000);
+    document.getElementById('taurus').src = 'Images/taurus_stage1_feeding.png';
+    setTimeout(() => { document.getElementById('taurus').src = 'Images/taurus_stage1.png'; taurusCurrentAction = null; }, 3000);
     timesFed++;
     document.getElementById('timesfed').innerHTML = timesFed;
 }
@@ -43,9 +43,9 @@ function bottleFeed() {
 
 function taurusPet() {
     taurusCurrentAction = "petting";
-    document.getElementById('taurus').src = 'taurus_stage1_pet.gif';
+    document.getElementById('taurus').src = 'Images/taurus_stage1_pet.gif';
     timesPet++;
-    setTimeout(() => { document.getElementById('taurus').src = 'taurus_stage1.png'; taurusCurrentAction = null; }, 2000);
+    setTimeout(() => { document.getElementById('taurus').src = 'Images/taurus_stage1.png'; taurusCurrentAction = null; }, 2000);
     document.getElementById('timespet').innerHTML = timesPet;
 }
 
